@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+a{
+  cursor: pointer;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+div.shape_content{
+  background:white!important;
+}
+div.dhx_content_text {
+  font-weight: 500;
+ 
+}
+div.dhx_content_title{
+  color: #0366d6;
+  font-weight: 500;
+}
+
+div.dhx_content_img{
+  float:left;width:60px;
+  height:60px;
+  margin:16px 12px 0 8px;
+  border-radius:50%;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  background-color:#f7f7f7
+}
+div.dhx_diagram {
+  text-align: center;
+}

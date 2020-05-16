@@ -1,0 +1,55 @@
+<div id="diagram_container" class="dhx_diagram__container"> </div>
+<button class="btn btn-primary" style="display:none" (click)="open(DemoTempl,'' , '',1)" id="addUToDemo"></button>
+<button class="btn btn-primary" style="display:none" (click)="open(DemoTempl,'' , '',2)" id="viewDetail"></button>
+
+<ng-template #DemoTempl let-c="close" let-d="dismiss">
+        <!-- Add New User Model -->
+        <div class="modal-content" *ngIf="addUToDemo">
+                <div class="modal-header">
+                        <h6 class="modal-title" id="modal-title-default">Demo-Chart</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                (click)="d('Cross click')">
+                                <span aria-hidden="true">×</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" (click)="addToGroup()">ADD</button>
+                        <button type="button" class="btn btn-link  ml-auto" data-dismiss="modal"
+                                (click)="c('Close click')">Close</button>
+                </div>
+        </div>
+        <!-- View User Details -->
+        
+        <div class="modal-content" *ngIf="viewDetail">
+                        <div class="modal-header">
+                          <h6 class="modal-title" id="modal-title-default">DETAILS</h6>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form role="form" #f="ngForm">
+                            <div class="form-group mb-3">
+                              <div id="main-card">
+                                <div class="cover-photo"></div>
+                                <div class="photo">
+                                  <img [src]="(UserData.img)" alt="">
+                                </div> 
+                                <div class="content">
+                                  <h2 class="name">{{UserData.title}}</h2>
+                                  <h3 class="fullstack">{{UserData.text}} <br></h3>
+              
+                                </div>
+              
+                              </div>
+                            </div>
+              
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default  ml-auto" data-dismiss="modal" (click)="c('Close click')">Close</button>
+                        </div>
+                      </div>
+</ng-template>
