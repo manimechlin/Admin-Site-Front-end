@@ -25,7 +25,7 @@
     "@angular/router": "8.0.0",
     "@balkangraph/orgchart.js": "^5.3.2",
     "@ng-bootstrap/ng-bootstrap": "^5.1.1",
-    "ajv": "6.10.0",
+    "ajv": "6.12.3",
     "angular-font-awesome": "^3.1.2",
     "arrive": "2.4.1",
     "aspnet-prerendering": "^3.0.1",
